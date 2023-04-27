@@ -99,5 +99,64 @@ plot(ROCRperf,colorize=TRUE)
 
 
 
+Practical 3
+
+AIM: Perform data classification using classification
+
+algorithm
+
+Naive-bayes:-
+
+Step1:Go to R studio-create file→
+
+Step2: Install catools, e1071,caret→ go to tools click on install package write package name then click on Install
+
+Step3:
+
+#classification using NAIVE BAYES THEOREM
+
+data("iris")
+
+str(iris)
+
+install.packages("e1071") #predict function
+
+install.packages("caTools")
+
+install.packages("caret") library(e1071)
+
+library(caTools)
+
+library(caret)
+
+splite-sample.split(iris,SplitRatio = 0.7)
+
+split
+
+train_clc-subset(iris,split=TRUE)
+
+test_cle-subset(iris,split=FALSE)
+
+View(iris)
+
+train_scale-c-scale(train_cl[,1:4])
+
+rotest scalec-scale(test_cll,1:4])
+
+View(train_scale)
+
+set.seed(120)
+
+(classifier_de-naive Bayes(Species,data=train_cl)
+
+Y pred<-predict(classifier_cl,test_cl)
+
+Y pred
+
+2 cm<-table(test_c$Species,y_pred)
+
+72cm
+
+confusionMatrix(cm)
 
 
