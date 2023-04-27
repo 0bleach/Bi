@@ -42,7 +42,7 @@ abline[relation),cex=3,pch=16,xlab="height in cm", ylab="weight in kg")
 
 
 
-Practical 2
+##Practical 2
 
 AIM: Perform Linear regression on a data warehous
 
@@ -99,7 +99,7 @@ plot(ROCRperf,colorize=TRUE)
 
 
 
-Practical 3
+##Practical 3
 
 AIM: Perform data classification using classification
 
