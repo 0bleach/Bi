@@ -160,3 +160,47 @@ Y pred
 confusionMatrix(cm)
 
 
+
+
+
+
+##Practical 4
+
+AIM:- Data clustering using clustering algorithm.
+
+Kmeans cluster :-
+
+Step 1: Go to RStudio -> Click on file -> New file >> go to Rscript Step 2-Install ggplot2, cluster: go to tools click on install package->write package name then click on install.
+
+Step 3:-
+
+install.packages("ggplot2")
+
+install.packages("cluster")
+
+library(ggplot2)
+
+library(cluster)
+
+data(iris)
+
+dfc-iris
+
+View(df)
+
+head(df)
+
+Explot(df,aes(Petal Length,Petal. Width))+
+
+.geom_point(aes[col=Species),size=3)
+
+set.seed(101)
+
+irisCluster-kmeans(dfl,1:4],centers = 3)
+
+irisCluster
+
+clusplot(iris,irisCluster$cluster,color=T,
+
+shade T,labels = 1,lines 2
+
